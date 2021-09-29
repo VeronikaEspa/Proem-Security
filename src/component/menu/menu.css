@@ -1,0 +1,89 @@
+/* Menu Azul */
+.contactoUltraRapido{
+    display: flex;
+    font-size: 12px;
+    font-family: "poppins-regular";
+}
+.mail-phone{
+    justify-content: space-between;
+}
+.menuAzul img{
+    width: auto;
+    height: 40%;
+}
+.redesSocialesMenuAzul img{
+    width: 100%;
+    height: auto;
+}
+/* Menu Blanco */
+.menuAzul, nav, .Logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ham{
+    display: none;
+    border: none;
+    background: none;
+}
+.ham span{
+    display: block;
+    background-color: #FBFBFB;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+.enlaces-menu{
+    display: flex;
+    font-family: "poppins-medium";
+    padding: 0;
+}
+.enlaces-menu li{
+    padding: 0 40px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.Logo img{
+    width: 20%;
+    margin: 3%;
+}
+.TituloNombreEmpresa{
+    font-size: 25px;
+    font-family: "poppins-bold";
+    margin-left: 1%;
+}
+.enlaces-menu li:hover{
+    text-decoration: underline 5px #1A1E53;
+}
+/* RESPONSIVE */
+@media (max-width: 768px){
+    body{
+        overflow: hidden;
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+    nav{
+        flex-direction: column;
+        padding: 25px 0;
+    }
+    .enlaces-menu{
+        padding-top: 5%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        display: none;
+        padding: 0;
+    }
+    .enlaces-menu li{
+        width: 100%;
+        text-align: center;
+        padding: 5%;
+        padding: 0 40px;
+        list-style-type: none;
+    }
+}
