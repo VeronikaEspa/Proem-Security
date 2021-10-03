@@ -16,7 +16,7 @@
     height: auto;
 }
 /* Menu Blanco */
-.menuAzul, nav, .Logo{
+.Logo{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,15 +34,10 @@
     margin: 10px auto;
     border-radius: 2px;
 }
-.enlaces-menu{
+#menuham{
     display: flex;
     font-family: "poppins-medium";
     padding: 0;
-}
-.enlaces-menu li{
-    padding: 0 40px;
-    list-style-type: none;
-    cursor: pointer;
 }
 .Logo img{
     width: 20%;
@@ -53,8 +48,53 @@
     font-family: "poppins-bold";
     margin-left: 1%;
 }
-.enlaces-menu li:hover{
-    text-decoration: underline 5px #1A1E53;
+/* MENU BLANCO NAV */
+.encabezado nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    cursor: pointer;
+    color: #1B22A1;
+    padding: 12px 30px;
+    font-family: "poppins-medium";
+    display: block;
+}
+.encabezado nav ul li:hover{
+    background-color: #1B22A1;
+    color: #FBFBFB;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-inline-start: 0px;
+}
+.encabezado nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.encabezado nav ul li ul li{
+    left: -33%;
+    font-size: 14px;
+    background-color: #FBFBFB;
+    position: relative;
+}
+.encabezado nav ul li ul li ul{
+    position: absolute;
+}
+.encabezado nav ul li ul{
+    display: none;
+}
+.encabezado nav ul li:hover > ul{
+    display: block;
 }
 /* RESPONSIVE */
 @media (max-width: 768px){
@@ -79,11 +119,30 @@
         display: none;
         padding: 0;
     }
-    .enlaces-menu li{
+    .submenu{
+        display: none;
+        flex-direction: column;
+        padding-left: 48%;
+        background-color: #262A6D;
+        align-items: flex-start;
+        list-style-type: none;
+        transition: all 0.3s;
+    }
+    #menuham{
+        font-family: "poppins-medium";
+        list-style-type: none;
+        background-color: #1B22A1;
+        color: #FBFBFB;
+        padding: 0 40px;
         width: 100%;
         text-align: center;
         padding: 5%;
-        padding: 0 40px;
-        list-style-type: none;
+    }
+    #menuham li{
+        padding: 2%;
+    }
+    #menuham a{
+        text-decoration: none;
+        color: #FBFBFB;
     }
 }

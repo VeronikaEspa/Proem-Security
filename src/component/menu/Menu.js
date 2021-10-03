@@ -2,7 +2,8 @@
 // import logoPequeño from '../../utils/img/logoCrud.png'
 // import jeringa from '../../utils/img/Jeringa.png'
 // import pulso from '../../utils/img/Pulso.png'
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
+import React from 'react'
 import mail from '../../utils/img/menu/Icon-Mail.png'
 import phone from '../../utils/img/menu/Icon-Phone.png'
 import instagram from '../../utils/img/menu/Insta.png'
@@ -15,9 +16,13 @@ function Menu() {
         enlaces = document.getElementById("menuham");
         enlaces.classList.toggle("enlaces-menu");
     };
+    function despliegueSubmenu(submenu){
+        submenu = document.getElementById("submenu");
+        submenu.style.display = "flex";
+    }
     return (
     <>
-        <header>
+        <header className="encabezado">
             <div className="fondo-azul blanco menuAzul">
                 <div className="contactoUltraRapido mail-phone">
                     <div className="contactoUltraRapido">
@@ -35,16 +40,27 @@ function Menu() {
                     <a href="#"><img src={linkedin} alt="Linkedin" className="redesImagen"/></a>
                 </div>
             </div>
+            {/* MENU BLANCO */}
             <nav className="fondo-blanco azul-oscuro">
                 <div className="Logo">
-                    <img src={logo} alt="Logo empresarial"/>
-                    <h4 className="TituloNombreEmpresa">PROEM SECURITY SAS</h4>
+                    <Link to = "/Proem-Security"><img src={logo} alt="Logo empresarial"/>
+                    <h4 className="TituloNombreEmpresa">PROEM SECURITY SAS</h4></Link>
                 </div>
                 <ul className="enlaces-menu" id="menuham">
-                    <li>Inicio</li>
-                    <li>Servicios</li>
-                    <li>Nosotros</li>
-                    <li>Contacto</li>
+                    <Link to = "/Proem-Security"><li type="button">Inicio</li></Link>
+                    <li className="botonServicios" type="button" onClick={despliegueSubmenu}>Servicios
+                        <ul className="submenu" id="submenu">
+                            <Link to = "/CCTV"><li>CCTV</li></Link>
+                            <Link to = "/Control_de_acceso"><li>Control de acceso</li></Link>
+                            <Link to = "/Deteccion_de_incendio"><li>Detección de incendio</li></Link>
+                            <Link to = "/Extincion_de_incendio"><li>Extincion de Incendio</li></Link>
+                            <Link to = "/Sistema_de_intrusion"><li>Sistema de intrusión</li></Link>
+                            <Link to = "/Audio_evacuacion"><li>Audio Evacuación</li></Link>
+                            <Link to = "/Redes_de_datos"><li>Redes de Datos</li></Link>
+                            <Link to = "/Telefonia_Analoga"><li>Telefonía Análoga e IP</li></Link>
+                        </ul></li>
+                    <Link to = "/Nosotros"><li type="button">Nosotros</li></Link>
+                    <Link to = "/Contacto"><li type="button">Contacto</li></Link>
                 </ul>
                 <button className="ham" type="button" onClick={menuhamfunction}>
                     <span className="br1"></span>

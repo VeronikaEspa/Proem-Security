@@ -4,6 +4,7 @@ import instagram from '../../utils/img/menu/Insta.png'
 import linkedin from '../../utils/img/menu/link.png'
 import whatsapp from '../../utils/img/menu/whats.png'
 import logo from '../../utils/img/logo.png'
+
 import './footer.css'
 function Footer() {
     function menuhamfunction (enlaces){
