@@ -31,7 +31,7 @@ function App() {
           <Route path="/Audio_evacuacion" exact component={Audio_evacuacion}/>
         <Route path="/Nosotros" exact component={Nosotros}/>
         <Route path="/Contacto" exact component={Contacto}/>
-        {/* <Route path="/" component={Inicio}/> */}
+        <Route path="/" component={Inicio}/>
       </Switch>
       </Router>
     </div>
