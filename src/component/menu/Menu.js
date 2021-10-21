@@ -1,7 +1,3 @@
-// import logo from '../../utils/img/Logo.png'
-// import logoPequeño from '../../utils/img/logoCrud.png'
-// import jeringa from '../../utils/img/Jeringa.png'
-// import pulso from '../../utils/img/Pulso.png'
 import {Link} from "react-router-dom"
 import React from 'react'
 import mail from '../../utils/img/menu/Icon-Mail.png'
@@ -26,25 +22,25 @@ function Menu() {
             <div className="fondo-azul blanco menuAzul">
                 <div className="contactoUltraRapido mail-phone">
                     <div className="contactoUltraRapido">
-                        <img src={mail} alt="Mail"/>
+                        <img className="simboloRedesMenuAzulMail" src={mail} alt="Mail"/>
                         <p>comercial.proem@gmail.com</p>
                     </div>
                     <div className="contactoUltraRapido">
-                        <img src={phone} alt="Phone"/>
-                        <p>30052208547</p>
+                        <img className="simboloRedesMenuAzul" src={phone} alt="Phone"/>
+                        <p>3005220854</p>
                     </div>
                 </div>
                 <div className="contactoUltraRapido redesSocialesMenuAzul">
-                    <a href="wa.link/4kb6nq"><img src={whatsapp} alt="Whatsapp" className="redesImagen"/></a>
-                    <a href="https://www.instagram.com/proem.security/" className="redesImagen"><img src={instagram} alt="Instagram"/></a>
-                    <a href="#"><img src={linkedin} alt="Linkedin" className="redesImagen"/></a>
+                    <a className="redesSocialesMenuAzul-Uno" href="wa.link/4kb6nq"><img src={whatsapp} alt="Whatsapp" className="redesImagen"/></a>
+                    <a className="redesSocialesMenuAzul-Uno" href="https://www.instagram.com/proem.security/"><img src={instagram} alt="Instagram" className="redesImagen"/></a>
+                    <a className="redesSocialesMenuAzul-Uno" href="#"><img src={linkedin} alt="Linkedin" className="redesImagen"/></a>
                 </div>
             </div>
             {/* MENU BLANCO */}
             <nav className="fondo-blanco azul-oscuro">
                 <div className="Logo">
-                    <Link to = "/Proem-Security"><img src={logo} alt="Logo empresarial"/>
-                    <h4 className="TituloNombreEmpresa">PROEM SECURITY SAS</h4></Link>
+                    <Link className="Logo" to = "/Proem-Security"><img src={logo} alt="Logo empresarial"/>
+                    <h4 className="TituloNombreEmpresa Logo">PROEM SECURITY SAS</h4></Link>
                 </div>
                 <ul className="enlaces-menu" id="menuham">
                     <Link to = "/Proem-Security"><li type="button">Inicio</li></Link>

@@ -4,6 +4,8 @@ import PoppinsLight from './utils/fonts/Poppins-Light.woff'
 import PoppinsMedium from './utils/fonts/Poppins-Medium.woff'
 import PoppinsRegular from './utils/fonts/Poppins-Regular.woff'
 import PoppinsSemiBold from './utils/fonts/Poppins-SemiBold.woff'
+import BalooRegular from './utils/fonts/Baloo_2/Baloo2-Regular.woff'
+import BalooBold from './utils/fonts/Baloo_2/Baloo2-Bold.woff'
 const GlobalStyles = createGlobalStyle `
 html, body {
     padding: 0;
@@ -56,6 +58,16 @@ button{
 @font-face {
     font-family: "poppins-semibold";
     src: local("poppins-semibold"), url(${PoppinsSemiBold}) format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "BalooRegular";
+    src: local("BalooRegular"), url(${BalooRegular}) format("woff");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "BalooBold";
+    src: local("BalooBold"), url(${BalooBold}) format("woff");
     font-weight: normal;
 }
 @media screen and (min-width:300px) and (max-width:999px){

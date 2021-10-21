@@ -1,0 +1,13 @@
+.descrip-organi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.descrip-organi img{
+    width: 40%;
+}
+.parrafo-desc{
+    width: 40%;
+    margin-left: 2%;
+}

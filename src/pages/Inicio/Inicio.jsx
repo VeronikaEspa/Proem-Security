@@ -1,10 +1,13 @@
 import React from 'react'
-import { Menu , Footer} from '../../component/index'
+import { Menu , Footer, Slider, ServiciosInicio, CasosExito, Marcas} from '../../component/index'
 const Inicio = () => {
     return(
         <>
         <Menu />
-        <h3>Inicio</h3>
+        <Slider/>
+        <ServiciosInicio/>
+        <CasosExito/>
+        <Marcas/>
         <Footer/>
         </>
     )

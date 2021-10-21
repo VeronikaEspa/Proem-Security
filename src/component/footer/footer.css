@@ -1,8 +1,46 @@
 .columnasFooter{
+    font-family: "poppins-regular";
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .finalCopyright{
-    padding-bottom: 2%;
+    padding: 2%;
+    margin: 0;
+}
+.imagenesServiciosFooter{
+    display: flex;
+}
+.serviciosFooter{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+.otrosDiv{
+    padding-top: 2%;
+}
+.siguenosParaNovedades p{
+    margin-top: 1em;
+}
+.LogoFooter{
+    width: 5%;
+}
+.redesFooter{
+    display: flex;
+    color: #FBFBFB;
+    text-decoration: none;
+}
+.redesFooter img{
+    height: 100%;
+    margin: 5%;
+}
+.imagenesServiciosFooter img{
+    width: 90%;
+    height: 90%;
+}
+.contactanosFooter{
+    margin-bottom: 1%;
+}
+.contactanosFooter h3{
+    font-size: 18px;
 }

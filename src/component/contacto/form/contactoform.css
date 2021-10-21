@@ -1,0 +1,55 @@
+.formularioCont{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../../../utils/img/contacto/fondoform.png);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    /* position: relative;
+    z-index: 3; */
+}
+.formulariotexto{
+    align-content: center;
+    display: grid;
+    grid-row-gap: 1em;
+    width: 70%;
+    font-family: "poppins-regular";
+}
+.formulariotexto .input{
+    width: 100%;
+    padding: 2%;
+    height: 30px;
+    font-size: 15px;
+}
+.formulariotexto textarea{
+    padding: 2%;
+    font-size: 15px;
+    width: 101%;
+    height: 100px;
+    font-family: "poppins-regular";
+}
+.formulariotexto .input textarea{
+    margin-top: 1%;
+}
+.botonEnviar{
+    background-color: #1B22A1;
+    color: #FBFBFB;
+    height: 40px;
+    font-family: "poppins-semibold";
+    width: 105%;
+    cursor: pointer;
+    border: 0;
+    padding: 3%;
+}
+.botonEnviar:hover{
+    background-color: #0e158a;
+}
+.tituloContactForm{
+    color: #FBFBFB;
+    font-size: 25px;
+    font-family: "poppins-semibold";
+}
